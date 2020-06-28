@@ -1,0 +1,140 @@
+﻿
+@{
+    ViewBag.Title = "ProductsList";
+    
+}
+
+
+@using CNWeb_BTL_BanLaNha.Models;
+@using PagedList;
+@using PagedList.Mvc;
+@model IPagedList<spMoi>
+
+<!--begin content-->
+<div id="box-content">
+    <div class="container" style="margin-top: 1rem">
+        <div class="row">
+            <div class="slide-show">
+                <div class="vt-slideshow">
+                    <ul>
+                        <li class="slide1" data-transition="random"><img src="~/Content/images/slide/bg-s2.png" alt="" /></li>
+                        <li class="slide2" data-transition="random"><img src="~/Content/images/slide/bg-s1.png" alt="" /></li>
+                        <li class="slide3" data-transition="random"><img src="~/Content/images/slide/bg-s3.png" alt="" /></li>
+                        <li class="slide3" data-transition="random"><img src="~/Content/images/slide/bg-s4.png" alt="" /></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="position-02">
+        <div class="container">
+            <div class="row">
+                <div class="title-sp">
+                    Sản Phẩm
+                    <div class="std">
+                        Các sản phẩm tại BanLaNha.
+                    </div>
+                </div>
+                <div id="main" class="col-lg-9 col-md-9 col-sm-8 col-xs-12 col-main">
+                    <div class="page-title category-title">
+                        <h1>ĐIỆN THOẠI</h1>
+                    </div>
+                    <div id="catalog-listing">
+                        <div class="category-products page-product-list">
+                            <div class="toolbar-top">
+                                <div class="toolbar">
+                                    <div class="sorter">
+                                        <div class="sort-by">
+                                            <label>SẮP XẾP THEO</label>
+                                            <div class="wrap-sb">
+                                                <div class="selected-order"></div>
+                                                <ul class="select-order">
+                                                    <li><a href="/Product/SXT" class="selected">Tên</a></li>
+
+                                                    <li><a href="/Product/SXG">Giá bán</a></li>
+                                                </ul>
+                                            </div>
+                                            <a class="desc" href="grid00ea.html?dir=desc&amp;order=position" title="Set Descending Direction">
+                                                <!--<img src="" alt="" class="v-middle" />-->
+                                            </a>
+                                        </div>
+                                        <div class="limiter">
+                                            <label>HIỂN THỊ</label>
+                                            <div class="wrap-show">
+                                                <div class="selected-limiter"></div>
+                                                <ul class="select-limiter">
+                                                    <li><a href="/Product/ProducList" class="selected">12</a></li>
+                                                    <li><a href="/Product/HT24">24</a></li>
+                                                    <li><a href="/Product/HT36">36</a></li>
+                                                    <li><a href="/Product/HT48">48</a></li>
+                                                </ul>
+                                            </div>
+                                            <label class="stylepp">MỖI TRANG</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <ul class="products-grid row">
+                                @foreach (var it in Model)
+                                {
+                                    <li class="col-lg-3 col-md-3 col-sm-6 col-xs-12 item">
+                                        <div class="item-wrap">
+                                            <div class="item-image">
+                                                <a class="product-image no-touch" href="#" title="Ipad Air and iOS7" style="height:215px">
+                                                    <img class="first_image" src="~/Content/images/product/Phone/@it.url" alt="Product demo" />
+                                                </a>
+                                                <div class="item-btn">
+                                                    <div class="box-inner">
+                                                        <a title="Add to wishlist" href="#" class="link-wishlist">&nbsp;</a>
+                                                        <a title="Add to compare" href="#" class="link-compare">&nbsp;</a>
+                                                        <span class="qview">
+                                                            <a href="detail.html"></a>
+                                                            <a class="vt_quickview_handler" data-original-title="Quick View" data-placement="left" data-toggle="tooltip" href="#"><span>Quick View</span></a>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <a class="btn-cart" href="@Url.Action("ThemVaoGio", "Cart", new { MaSP = it.MaSP })"> &nbsp; </a>
+                                                
+                                            </div>
+                                            <div class="pro-info">
+                                                <div class="pro-inner">
+                                                    <div class="pro-title product-name">
+                                                        
+                                                            @Html.ActionLink(it.TenSP, "Detail", new { id=it.MaSP})
+                                                       
+                                                    </div>
+                                                    <div class="pro-content">
+                                                        <div class="wrap-price">
+                                                            <div class="price-box">
+                                                                <span class="regular-price">
+                                                                    @{
+                                                                        if (it.PhanTramKM == null) { it.PhanTramKM = "0"; }
+                                                                        float giaKM = it.GiaSP.Value * (1 - float.Parse(it.PhanTramKM));
+                                                                    }
+                                                                    <span class="price" style="font-size:14px">@giaKM.ToString("N0") VND</span>
+                                                                </span>
+                                                                <p class="special-price">
+                                                                    <span class="price">@it.GiaSP.Value.ToString("N0") VND</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--end item wrap -->
+                                    </li>
+                                }
+
+                            </ul>
+
+                            <div class="col-md-12 text-center clear-both">
+                                @Html.PagedListPager(Model, sotrang => Url.Action("ProductsList", new { page = sotrang }))
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end content-->

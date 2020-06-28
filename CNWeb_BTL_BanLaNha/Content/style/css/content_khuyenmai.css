@@ -1,0 +1,139 @@
+.khuyen-mai>[class*="khuyen-mai__box-"]:not(:last-child) {
+    margin-bottom: 10px;
+} 
+/*chọn vào thì nó sẽ thêm 1 border bottom nữa*/
+
+.box-menu a {
+    display: inline-block;
+    padding: 17px 20px 10px 20px;
+    border-bottom: 2px solid white;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: black;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.box-content:not(:nth-of-type(3n)) {
+    margin-right: 10px;
+}
+a {
+    color: #d70018;
+    text-decoration: none;
+}
+.box-content .box-content__img {
+    height: 183px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.box-content .box-content__img img {
+    height: 100%;
+}
+.box-content .box-content__info {
+    padding: 10px;
+}
+
+.box-content .box-content__info h3 {
+    height: 38px;
+    margin: 0 0 10px 0;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.4;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+	
+}
+
+.box-content .box-content__info a {
+    color: #212121;
+    transition: color .2s;
+}
+
+.box-content .box-content__info .info__left p:last-child {
+    font-size: 13px;
+    font-weight: bold;
+    color: #e11b1e;
+}
+
+.box-content .box-content__info .info__right a {
+    width: 90px;
+    float: right;
+    display: block;
+    margin-top: 5px;
+    padding: 5px;
+    text-align: center;
+    color: white;
+    background: linear-gradient(#f52f32, #e11b1e);
+    border: 1px solid #e11b1e;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#content-container
+{
+	position: relative;
+	background: white;
+    animation-name: slowBox;
+    animation-duration: 2s;
+}
+
+#content-header
+{
+	background: pink;
+	width: 1500px;
+    margin: auto;
+    min-height: 50px;
+}
+#content-center
+{
+	position: relative;
+	background: white;
+	position: relative;
+	width: 1300px;
+    margin: auto;
+    min-height: 1500px;
+	font: 16px sans-serif;
+}
+
+#content-header a
+{
+	
+	color: black;
+	font: 20px sans-serif;
+	padding: 17px 20px 10px;
+	text-align: center;
+	margin: left;
+}
+#content-center .box-content
+{
+	padding : 30px 0px 10px 20px;
+}
+
+.price-box .special-price .price {
+    font-weight: 400;
+    color: green;
+	text-decoration: none;
+}
+
+.items .item-wrap
+{
+	float:left;
+}
+.products-grid .item .item-wrap .item-image {
+    position: relative;
+    background: #fff;
+    overflow: hidden;
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+    height: 250px;
+}
+
+
+

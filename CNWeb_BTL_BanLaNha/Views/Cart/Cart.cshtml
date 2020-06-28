@@ -1,0 +1,103 @@
+﻿
+@{
+    ViewBag.Title = "Cart";
+}
+@using CNWeb_BTL_BanLaNha.Models;
+@using CNWeb_BTL_BanLaNha.Views.Classs;
+
+
+@if (Model == null)
+{
+    <p class="text-info text-center">
+        Giỏ hàng của bạn rỗng!
+    </p>
+}
+else
+{
+    <div id="box-content">
+
+        <div class="position-02">
+            <div class="container">
+                <div class="row">
+                    <div class="block vt-slider vt-slider3" style="width:100%">
+                        <div class="slider-inner">
+                            <div class="container-slider">
+                                <table class="table table-bordered">
+                                    <tr class="row" style="font-size:15px; font-weight:600" >
+                                        <th class="col-lg-3"style="text-align:center;font-size:15px; font-weight:600">Hình</th>
+                                        <th class="col-lg-2"style="text-align:center;font-size:15px; font-weight:600">Tên sản phẩm</th>
+                                        <th class="col-lg-2"style="text-align:center;font-size:15px; font-weight:600">Số lượng</th>
+                                        <th class="col-lg-2"style="text-align:center;font-size:15px; font-weight:600">Đơn giá</th>
+                                        <th class="col-lg-2"style="text-align:center;font-size:15px; font-weight:600">Thành tiền</th>
+                                        <th class="col-lg-1"style="text-align:center;font-size:15px; font-weight:600">Hành động</th>
+                                    </tr>
+                                    @foreach (CartItem item in Model.getCart)
+                                    {
+                                        <tr class="row" style="text-align:center">
+                                            <td style="text-align:center"class="text-center col-lg-3"><img src="~/Content/images/product/Phone/@item.sp.url" /> </td>
+                                            <td style="text-align:center" class="col-lg-2">
+                                                @Html.ActionLink((string)item.sp.TenSP, "Detail", "Product")
+                                            </td>
+                                            <td style="text-align:center" class="col-lg-2">
+                                                <form action="@Url.Action("CapNhatGio")" method="get">
+                                                    <input type="hidden" name="MaSP" value="@item.sp.MaSP" />
+                                                    <input style="width: 50px" type="number" min="1" step="1" name="SL" value="@item.Quantity" />
+                                                    <button type="submit" class="btn btn-primary btn-sm"> Cập nhật </button>
+                                                </form>
+                                            </td>
+                                            <td style="text-align:center" class="col-lg-1">
+                                                <div class="price-box">
+                                                    <span class="regular-price">
+                                                        @{
+                                                            if (item.sp.PhanTramKM == null) { item.sp.PhanTramKM = "0"; }
+                                                            var giaKM = item.sp.GiaSP* (1 - float.Parse(item.sp.PhanTramKM));
+                                                        }
+                                                        <span class="price" style="font-size:14px">@giaKM.Value.ToString("N0") VND</span>
+                                                    </span>
+                                                    <p class="special-price">
+                                                        <span class="price">@item.sp.GiaSP.Value.ToString("N0") VND</span>
+                                                </div>
+                                            </td>
+                                            <td style="text-align:center; color:red; font-weight:600" class="col-lg-1 "> @item.ThanhTien.ToString("N0") VNĐ </td>
+
+                                            <td style="text-align:center" class="col-lg-1"> 
+                                            <a href="@Url.Action("XoaKhoiGio",new { MaSP = item.sp.MaSP})" onclick="return confirm('Bạn có chắc muốn xóa sản phẩm này?');" class="btn btn-danger btn-sm">Xóa</a> 
+                                            </td>
+                                        </tr>
+                                    }
+                                        <tr class="row">
+                                            <td class="col-lg-3" style="text-align:center;font-size:15px; font-weight:600">Tổng</td>
+                                            <td class="col-lg-2" style="text-align:center;font-size:15px; font-weight:600"></td>
+                                            <td class="col-lg-2" style="text-align:center;font-size:15px; font-weight:600">@Model.ComputeTotalProduct().ToString()</td>
+                                            <td class="col-lg-2" style="text-align:center;font-size:15px; font-weight:600"></td>
+                                            <td class="col-lg-2" style="text-align:center;font-size:15px; font-weight:600; color: red;">@Model.ComputeTotalValue().ToString("N0") VNĐ</td>
+                                            <td class="col-lg-1" style="text-align:center;font-size:15px; font-weight:600"></td>
+                                        </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class=" container row box" style="margin: 2rem auto; height: auto; line-height: 3rem;">
+                <label style="text-align: center;">THÔNG TIN ĐƠN HÀNG</label><br>
+                <div style="margin-left: 20vw; float: left;">
+                    <form action="@Url.Action("DatHang")" method="post">
+                        <label>Tên khách hàng</label><br>
+                        <input name="TenKH" type="text" placeholder="Họ và tên" style="width: 40vw; padding-left: 1rem;"><br>
+                        <label>Số điện thoại</label><br>
+                        <input name="SDT" type="text" placeholder="Số điện thoại" style="width: 40vw;padding-left: 1rem;"><br>
+                        <label>Địa chỉ</label><br>
+                        <input name="DiaChiNhan" type="text" placeholder="Số nhà, tên đường, phường, quận, tỉnh" style="width: 40vw; padding-left: 1rem;"><br>
+                        <label>Lưu ý cho cửa hàng</label><br>
+                        <input name="GhiChu " type="text" placeholder="Lưu ý" style="width: 40vw;padding-left: 1rem;"><br>
+                        <div style="float: right;">
+                            <label> Tổng tiền: @Model.ComputeTotalValue().ToString("N0") VND</label>
+                            <button class="btn btn-primary" style="padding: .5rem; margin-left: 1rem;">Thanh toán</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+}

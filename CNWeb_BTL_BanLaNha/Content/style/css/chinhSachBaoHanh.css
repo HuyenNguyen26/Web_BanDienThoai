@@ -1,0 +1,119 @@
+.position-02 .container .row
+{
+	background: white;
+	min-height: 400px;
+}
+
+.container .menu-head
+{
+		display: table;
+		border-bottom: 1px solid #e11b1e;
+		box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+		background: white;
+		text-align: center;
+}
+.container .menu-head a {
+    display: inline-block;
+    padding: 17px 20px 10px 20px;
+    border-bottom: 2px solid white;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: black;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.comment_box {
+    border-top: 1px solid #eee;
+    padding-top: 10px;
+}
+
+.f-left {
+    width: 100%;
+}
+
+.f-left, .left {
+    float: left!important;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.comment_box .form-add, .comment_box .form_reply_input {
+    border: 1px solid #dadada;
+    border-radius: 5px!important;
+}
+
+.f-left, .left {
+    float: left!important;
+}
+.f-left {
+    width: 100%;
+}
+.f-left.comment_info {
+    margin-bottom: 10px;
+}
+span#total_comment {
+    font-size: 20px;
+}
+.std b, .std strong {
+    font-weight: 700;
+}
+div {
+    display: block;
+}
+.comment_wrap .question {
+    display: block;
+    overflow: hidden;
+    position: relative;
+    margin: 0;
+    font-size: 13px;
+    color: #333;
+    line-height: 24px;
+    clear: both;
+    float: none;
+    width: auto;
+    padding: 10px 0 10px 30px;
+}
+.comment_wrap .actionuser {
+    display: block;
+    height: 34px;
+    position: relative;
+    margin: -5px 10px 0 0;
+    font-size: 14px;
+    color: #333;
+    line-height: 24px;
+    margin-bottom: 6px;
+    padding-left: 25px;
+}
+.reply_list {
+    position: relative;
+    background: #eee;
+    margin-bottom: 10px;
+    width: calc(100% - 30px);
+    float: right;
+    border: 1px solid #dadada;
+    border-radius: 5px;
+    padding: 15px 15px 0;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+li.cmt_item {
+    margin-top: 10px;
+    list-style-type: none;
+}
+
+.fnews-detail-title {
+    font-size: 24px;
+    color: #2e2e2e;
+    line-height: 25px;
+}
+.fnews-detail-col1 {
+    width: 70.8%;
+    padding-right: 20px;
+}

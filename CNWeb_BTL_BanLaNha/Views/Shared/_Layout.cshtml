@@ -1,0 +1,408 @@
+﻿@using CNWeb_BTL_BanLaNha.Models;
+
+<!DOCTYPE html>
+<html xml:lang="en" lang="en">
+
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" /><!-- /Added by HTTrack -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="~/Content/style/css/style-main.css" />
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans" media="all" />
+    <title>BanLaNha</title>
+    @RenderSection("css", false)
+</head>
+<body>
+    <!--begin header-->
+    <div id="box-header">
+        <div class="header-container">
+            <div class="header">
+                <div class="box-header-01">
+                    <div class="">
+                        <div class="row" style="width: 100%; margin-bottom: 1rem;">
+                            <div class="logo">
+                                <a href="/Home/Index"><img src="~/Content/images/logo.png" alt="" /></a>
+                                <div class="box-search" style="float: right; margin: 1rem;">
+                                    <form action="/Product/Timkiem" method="POST">
+                                        <button><span>search</span></button>
+                                        @*<ul class="drop-search">
+                                                <li>
+                                                    <span class="selected">All Categories </span>
+                                                    <ul>
+                                                        <li>All Categories</li>
+                                                        <li>Cate 1</li>
+                                                        <li>Cate 2</li>
+                                                        <li>Cate 3</li>
+                                                    </ul>
+                                                </li>
+                                            </ul>*@
+                                        <input name="search" type="text" value="Search" onfocus="this.value = '';" onblur="if (this.value == '') { this.value = 'Search';}">
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="account-and-cart">
+                                <div class="my-account">
+                                    <div class="content">
+                                        <ul class="left">
+                                            <li><a class="top-link-myaccount" href="#">@Html.ActionLink("Tài khoản", "Account", "Account")</a></li>
+                                            <li><a class="top-link-checkout" href="#">@Html.ActionLink("Đăng xuất", "Index", "Home")</a></li>
+                                            <li><a class="top-link-login" href="/Account/Login">Đăng nhập</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="box-cart">
+                                    <div class="cart-mini">
+                                        <div class="title">
+                                            <span class="item">3</span>
+                                        </div>
+                                        <div class="block-content">
+                                            <div class="inner">
+                                                <p class="block-subtitle" style="text-align: center; font-weight: bold">GIỎ HÀNG</p>
+                                                <ol id="cart-sidebar" class="mini-products-list">
+                                                    <li class="item">
+                                                        <a href="#" title="Fashion Product 09" class="product-image">
+                                                            <img src="~/Content/images/product/small/image-demo-1.jpg" alt="Fashion Product 09" />
+                                                        </a>
+                                                        <div class="product-details">
+                                                            <p class="product-name"><a title="Fashion Product 09" href="#">SamSung note 9</a></p>
+                                                            <span class="price">$200.00</span>
+                                                            <div class="qty-abc">
+                                                                <a title="Decrement" class="qty-change-left" href="#">down</a>
+                                                                <input class="input-text qty" type="text" value="1" />
+                                                                <a title="Increment" class="qty-change-right" href="#">up</a>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ol>
+                                                <div class="summary">
+                                                    <p class="subtotal">
+                                                        <span class="price">$200.00</span>
+                                                    </p>
+                                                </div>
+                                                <div class="actions">
+                                                    <div class="a-inner">
+                                                        <a class="btn-mycart" href="/Cart/Cart" title="View my cart">
+                                                            Chi tiết giỏ hàng
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu">
+                                <div class="box-main-menu">
+                                    <div class="main-menu">
+                                        <ul>
+                                            <!-- <li class="item1 first"><a href="home-01.html">Home</a></li> -->
+                                            <li class="item1 megamenu-parent">
+                                                <a href="/Product/DT">Điện thoại</a>
+                                                <div class="vt_megamenu_content">
+                                                    <div class="mega-menu-01">
+                                                        <div class="menu-01 menu-01-cate">
+                                                            <ul class="content-col">
+                                                                <li class="first"><a href="/Product/SPSS"><span>SamSung</span></a></li>
+                                                                <li><a href="/Product/SPIP"><span>Iphone</span></a></li>
+                                                                <li><a href="/Product/SPOP"><span>Oppo</span></a></li>
+                                                                <li><a href="/Product/SPXM"><span>Xiaomi</span></a></li>
+                                                                <li><a href="#"><span>Khác</span></a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="item3 megamenu-parent">
+                                                <a href="/Product/PK">Phụ kiện</a>
+                                                <div class="vt_megamenu_content">
+                                                    <div class="mega-menu-01">
+                                                        <div class="menu-01 menu-01-cate">
+                                                            <ul class="content-col">
+                                                                <li class="first"><a href="/Product/SPTN"><span>Tai nghe</span></a></li>
+                                                                <li><a href="#"><span>Sạc</span></a></li>
+                                                                <li><a href="#"><span>Thẻ nhớ</span></a></li>
+                                                                <li><a href="/Product/SPOL"><span>Ốp lưng</span></a></li>
+                                                                <li><a href="/Product/SPL"><span>Loa</span></a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="item4"><a href="/Promotion/KhuyenMai">Khuyến mãi </a></li>
+                                            <li class="item5 megamenu-parent">
+                                                <a href="/Policy/StandardPolicy">chính sách và hướng dẫn</a>
+                                                <div class="vt_megamenu_content">
+                                                    <div class="mega-menu-01">
+                                                        <div class="menu-01 menu-01-cate">
+                                                            <ul class="content-col">
+                                                                <li class="first"><a href="/Policy/ExchangePolicy"><span>Chính Sách Bảo Hành Đổi Mới</span></a></li>
+                                                                <li><a href="#"><span>@Html.ActionLink("Chính Sách Bảo Hành Tiêu Chuẩn", "StandardPolicy", "Policy") </span></a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="item6"><a href="#">@Html.ActionLink("Hướng Dẫn", "Guidlines", "Policy")</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="bgr-menu">
+                    </div>
+                </div>
+                <!--
+                            <div class="box-header-03">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="box-search" style="float: right; margin: 1rem;" >
+                                        <form action="http://demo.7uptheme.com/html/mello/?q=exp" method="POST">
+                                            <button><span>search</span></button>
+                                            <ul class="drop-search">
+                                                <li>
+                                                <span class="selected">All Categories </span>
+                                                    <ul>
+                                                        <li>All Categories </li>
+                                                        <li>Cate 1</li>
+                                                        <li>Cate 2</li>
+                                                        <li>Cate 3</li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                            <input name="search" type="text" value="" placeholder="search this site..."/>
+                                        </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> -->
+            </div>
+        </div>
+    </div>
+    <!--end header-->
+    <!--begin content-->
+    @RenderBody()
+    <!--end content-->
+    <!--begin footer-->
+    <div id="box-footer">
+        <div class="box-footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="row">
+                        <div class="box-connect col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                            <div class="block-title"><span>Connect with</span></div>
+                            <a href="#" class="face-book">face book</a>
+                            <a href="#" class="tweeter">tweeter</a>
+                            <a href="#" class="no-name">no-name</a>
+                            <a href="#" class="pinseter">pinseter</a>
+                            <a href="#" class="google">google+</a>
+                            <a href="#" class="init">init</a>
+                        </div>
+                        <div class="box-tweeter col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                            <div class="block-title"><span>tweeter</span></div>
+                            <div class="content">
+                                Cùng mua sắm tại BanLaNha.
+                                BanLaNha giá rẻ, hạnh phúc mọi nhà.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box-footer-middle">
+            <div class="container">
+                <div class="row">
+                    <div class="row">
+                        <div class="block block-info col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                            <div class="block-title">
+                                <span>
+                                    HỖ TRỢ - DỊCH VỤ
+
+
+                                </span>
+                            </div>
+                            <div class="block-content">
+                                <ul>
+                                    <li><a href="#">Tổng đài hỗ trợ: 19002091</a></li>
+                                    <li><a href="#">Hà Nội: (024).73045566</a></li>
+                                    <li><a href="#">TP.HCM: (028).73045566</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="block block-customer col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                            <div class="block-title"><span>Địa chỉ</span></div>
+                            <div class="block-content">
+                                <ul>
+                                    <li><a href="#">621D Cách Mạng Tháng 8, Phường 15 - Quận 1, TP.Hồ Chí Minh</a></li>
+                                    <li><a href="#">215 Lê Văn Việt, phường Hiệp Phú, Quận 9, TP.Hồ Chí Minh</a></li>
+                                    <li><a href="#">48 Hồ Tùng Mậu, Cầu Diễn, Từ Liêm, TP. Hà Nội</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="block block-galary col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                            <div class="block-title"><span>Gallery</span></div>
+                            <div id="links" class="carousel slide" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                    <li data-target="#links" data-slide-to="0" class="active"></li>
+                                    <li data-target="#links" data-slide-to="1"></li>
+                                    <li data-target="#links" data-slide-to="2"></li>
+                                </ol>
+                                <div class="carousel-inner" role="listbox">
+                                    <div class="item active">
+                                        <a href="~/Content/images/product/larg/demo1.jpg" title="Glary image 01" data-gallery>
+                                            <img src="~/Content/images/product/larg/demo1.jpg" alt="" />
+                                        </a>
+                                        <a href="~/Content/images/product/larg/demo2.jpg" title="Glary image 02" data-gallery>
+                                            <img src="~/Content/images/product/larg/demo2.jpg" alt="" />
+                                        </a>
+                                        <a href="~/Content/images/product/larg/demo3.jpg" title="Glary image 03" data-gallery>
+                                            <img src="~/Content/images/product/larg/demo3.jpg" alt="" />
+                                        </a>
+                                        <a href="~/Content/images/product/larg/demo4.jpg" title="Glary image 04" data-gallery>
+                                            <img src="~/Content/images/product/larg/demo4.jpg" alt="" />
+                                        </a>
+                                        <a href="~/Content/images/product/larg/demo5.jpg" title="Glary image 05" data-gallery>
+                                            <img src="~/Content/images/product/larg/demo5.jpg" alt="" />
+                                        </a>
+                                        <a href="~/Content/images/product/larg/demo6.jpg" title="Glary image 06" data-gallery>
+                                            <img src="~/Content/images/product/larg/demo6.jpg" alt="" />
+                                        </a>
+                                    </div>
+                                    <div class="item">
+                                        <a href="~/Content/images/product/larg/demo7.jpg" title="Glary image 07" data-gallery>
+                                            <img src="~/Content/images/product/larg/demo7.jpg" alt="" />
+                                        </a>
+                                        <a href="~/Content/images/product/larg/demo8.jpg" title="Glary image 08" data-gallery>
+                                            <img src="~/Content/images/product/larg/demo8.jpg" alt="" />
+                                        </a>
+                                        <a href="~/Content/images/product/larg/demo9.jpg" title="Glary image 09" data-gallery>
+                                            <img src="~/Content/images/product/larg/demo9.jpg" alt="" />
+                                        </a>
+                                        <a href="~/Content/images/product/larg/demo10.jpg" title="Glary image 10" data-gallery>
+                                            <img src="~/Content/images/product/larg/demo10.jpg" alt="" />
+                                        </a>
+                                        <a href="~/Content/images/product/larg/demo11.jpg" title="Glary image 11" data-gallery>
+                                            <img src="~/Content/images/product/larg/demo11.jpg" alt="" />
+                                        </a>
+                                        <a href="~/Content/images/product/larg/demo12.jpg" title="Glary image 12" data-gallery>
+                                            <img src="~/Content/images/product/larg/demo12.jpg" alt="" />
+                                        </a>
+                                    </div>
+                                    <div class="item">
+                                        <a href="~/Content/images/product/larg/demo13.jpg" title="Glary image 13" data-gallery>
+                                            <img src="~/Content/images/product/larg/demo13.jpg" alt="" />
+                                        </a>
+                                        <a href="~/Content/images/product/larg/demo13.jpg" title="Glary image 13" data-gallery>
+                                            <img src="~/Content/images/product/larg/demo13.jpg" alt="" />
+                                        </a>
+                                        <a href="~/Content/images/product/larg/demo13.jpg" title="Glary image 13" data-gallery>
+                                            <img src="~/Content/images/product/larg/demo13.jpg" alt="" />
+                                        </a>
+                                        <a href="~/Content/images/product/larg/demo13.jpg" title="Glary image 13" data-gallery>
+                                            <img src="~/Content/images/product/larg/demo13.jpg" alt="" />
+                                        </a>
+                                        <a href="~/Content/images/product/larg/demo13.jpg" title="Glary image 13" data-gallery>
+                                            <img src="~/Content/images/product/larg/demo13.jpg" alt="" />
+                                        </a>
+                                        <a href="~/Content/images/product/larg/demo13.jpg" title="Glary image 13" data-gallery>
+                                            <img src="~/Content/images/product/larg/demo13.jpg" alt="" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="block-content">
+                                <ul>
+                                    <li><a href="#" class="view-all">View all</a></li>
+                                </ul>
+                            </div>
+                            <!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
+                            <div id="blueimp-gallery" class="blueimp-gallery">
+                                <!-- The container for the modal slides -->
+                                <div class="slides"></div>
+                                <!-- Controls for the borderless lightbox -->
+                                <h3 class="title">&nbsp;</h3>
+                                <a class="prev">‹</a>
+                                <a class="next">›</a>
+                                <a class="close">×</a>
+                                <a class="play-pause"></a>
+                                <ol class="indicator"></ol>
+                                <!-- The modal dialog, which will be used to wrap the lightbox content -->
+                                <div class="modal fade">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" aria-hidden="true">&times;</button>
+                                                <h4 class="modal-title">&nbsp;</h4>
+                                            </div>
+                                            <div class="modal-body next"></div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default pull-left prev">
+                                                    <i class="glyphicon glyphicon-chevron-left"></i>
+                                                    Previous
+                                                </button>
+                                                <button type="button" class="btn btn-primary next">
+                                                    Next
+                                                    <i class="glyphicon glyphicon-chevron-right"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="block block-cu col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                            <div class="block-title"><span>Thông tin liên hệ</span></div>
+                            <div class="block-content">
+                                <ul>
+                                    <!-- <li class="item1"><span>Our business address is 1063 <br />Freelon Street San Francisco</span></li> -->
+                                    <li class="item2"><span>+ 020.566.6666</span></li>
+                                    <li class="item3"><a href="mailto:support@7-Up.com">support@7-Up.com</a></li>
+                                </ul>
+                                <div class="phone-nb"><a href="tel:0906868757">090.68.68.757</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box-footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="box-left">
+                        <h6>
+                            BanLaNha &copy; 2015 Sieu Nhan Demo Store. All Rights Reserved. Designed by <a title="Visit VnThemePro.Com!"
+                                                                                                           href="7uptheme.html">Sieu Nhan</a>
+                        </h6>
+                    </div>
+                    <div class="box-right">
+                        <ul>
+                            <li><img src="~/Content/images/p1.png" alt="" /></li>
+                            <li><img src="~/Content/images/p2.png" alt="" /></li>
+                            <li><img src="~/Content/images/p3.png" alt="" /></li>
+                            <li><img src="~/Content/images/p4.png" alt="" /></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a id="gototop">Top</a>
+        <!--js-->
+        <script type="text/javascript" src="~/Content/js/jquery-1.11.1.min.js"></script>
+        <script type="text/javascript" src="~/Content/style/bootstrap/js/bootstrap.min.js"></script>
+        <script src="~/Content/js/galary-image/js/jquery.blueimp-gallery.min.js"></script>
+        <script src="~/Content/js/galary-image/js/bootstrap-image-gallery.js"></script>
+        <script type="text/javascript" src="~/Content/js/owl-carousel/owl.carousel.js"></script>
+        <script type="text/javascript" src="~/Content/js/slideshow/jquery.themepunch.revolution.js"></script>
+        <script type="text/javascript" src="~/Content/js/slideshow/jquery.themepunch.plugins.min.js"></script>
+        <script type="text/javascript" src="~/Content/js/theme.js"></script>
+
+    </div>
+    <!--end footer-->
+</body>
+</html>

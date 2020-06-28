@@ -1,0 +1,19 @@
+.position-02 {
+    margin-top: 2rem;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.product-essential {
+    font-size: 14px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.block-lastest-pro .owl-controls .owl-pagination {
+    padding: 15px 30px 20px 195px
+}
+
+.block-lastest-pro .owl-controls .owl-page {
+    background-color: darkgray;
+}

@@ -1,0 +1,292 @@
+﻿
+@{
+    ViewBag.Title = "Detail";
+    var SPLQ = ViewBag.SPLienQuan;
+}
+@using CNWeb_BTL_BanLaNha.Models;
+
+<!--begin content-->
+<div class="content product-view">
+    <div class="breadcrumbs">
+        <div class="container">
+            <div class="row">
+                <ul>
+                    <li class="home">
+                        <a href="#" title="Go to Home Page">
+                            @Html.ActionLink("Trang chủ", "Index", "Home")
+                        </a>
+                        <span>|</span>
+                    </li>
+                    <li class="category3">
+                        <strong>Chi tiết sản phẩm</strong>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="row">
+                <div id="main" class=" col-main">
+                    <div class="product-essential">
+                        @foreach (spMoi it in Model)
+                        {
+                            <div class="wrap">
+                                <form action="#" method="post" id="product_addtocart_form">
+                                    
+                                    <div class="product-img-box">
+                                        <div class="image-main" style="text-align: center; margin-top:20px;padding-bottom:35px">
+                                            <img src="~/Content/images/product/Phone/@it.url" alt="Product demo" / style="width:370px;">
+                                        </div>
+                                        <div class="click-quick-view">&nbsp;</div>
+                                        <div id="galary-image" class="carousel slide" data-ride="carousel">
+                                            <!-- Wrapper for slides -->
+                                            <div class="carousel-inner" role="listbox">
+                                                <div class="item active">
+                                                    <div class="sub-item">
+                                                        <img src="~/Content/images/product/larg/demo1.jpg" alt="Chania">
+                                                    </div>
+                                                    <div class="sub-item">
+                                                        <img src="~/Content/images/product/larg/demo3.jpg" alt="Flower">
+                                                    </div>
+                                                    <div class="sub-item">
+                                                        <img src="~/Content/images/product/larg/demo4.jpg" alt="Flower">
+                                                    </div>
+                                                </div>
+
+                                                <div class="item">
+                                                    <div class="sub-item">
+                                                        <img src="~/Content/images/product/larg/demo2.jpg" alt="Chania">
+                                                    </div>
+                                                    <div class="sub-item">
+                                                        <img src="~/Content/images/product/larg/demo5.jpg" alt="Chania">
+                                                    </div>
+                                                    <div class="sub-item">
+                                                        <img src="~/Content/images/product/larg/demo6.jpg" alt="Chania">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Left and right controls -->
+                                            @*<a class="left carousel-control" href="#galary-image" role="button" data-slide="prev">
+                                                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                                <span class="sr-only">Trước</span>
+                                            </a>
+                                            <a class="right carousel-control" href="#galary-image" role="button" data-slide="next">
+                                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                                <span class="sr-only">Sau</span>
+                                            </a>*@
+                                        </div>
+
+                                        <div class="image-quick-view no-display">
+
+                                            <div class="content">
+                                                <span class="close" style="margin-top:0px">x</span>
+                                                <div class="img_sp" style="background:white; margin-left:5px">
+                                                    <img src="~/Content/images/product/Phone/@it.url" alt=""  style="width:370px; padding:25px 15px">
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-shop">
+                                        <div class="wrap-er">
+                                            <div class="product-name">
+                                                <h2>@it.TenSP</h2>
+                                            </div>
+                                        </div>
+                                        <!--<div class="product-code"><label>Product code:</label></div>-->
+                                        <div class="short-description">
+                                            <div class="box-info-detail">
+                                                <div class="price-info">
+                                                    <div class="price-box">
+                                                        <p class="old-price" style="font-size:32px">
+                                                            <span style="font-size:24px">Giá: </span>
+                                                            <span class="price" style="font-size:24px">
+                                                                @it.GiaSP.Value.ToString("N0") VND
+                                                            </span>
+                                                        </p>
+                                                        @*<p class="special-price">
+                                            <span class="price">
+                                                2.590.000đ
+                                            </span>
+                                        </p>*@
+                                                    </div>
+                                                </div>
+                                                <div class="product-options-bottom">
+                                                    <div class="custom-option color">
+                                                        <label for="qty">Màu sắc</label>
+                                                        <ul>
+                                                            <li add="$1.500.00"><span style="background-color:#ffffff;border:1px solid #eaeaea;">color1</span></li>
+                                                            <li add="$1.600.00 "><span style="background-color:#85d577">color2</span></li>
+                                                            <li add="$1.700.00 "><span style="background-color:#f6e23b">color3</span></li>
+                                                            <li add="$1.800.00 "><span style="background-color:#9fc5f3">color4</span></li>
+                                                            <li add="$1.900.00 "><span style="background-color:#ff6766">color5</span></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="custom-option size">
+                                                        <label for="qty">Dung Lượng</label>
+                                                        <ul>
+                                                            <li add="$2.000.00"><span style="width: auto;">32GB</span></li>
+                                                            <li add="$1.500.00"><span style="width: auto;">64GB</span></li>
+                                                            <li add="$1.600.00"><span style="width: auto;">128GB</span></li>
+                                                        </ul>
+                                                    </div>
+                                                    <br>
+                                                    <div class="add-to-box add-to-cart">
+                                                        <div class="add-to-cart" style="display: inline-flex;">
+                                                            <span>Số Lượng</span>
+                                                            <div class="input-group" style="margin-left:1rem;width: 10rem; margin-top: inherit;">
+                                                                <span class="input-group-btn">
+                                                                    <button type="button" class="btn btn-number" data-type="minus" data-field="quant[2]">
+                                                                        <span class="glyphicon glyphicon-minus" style="font-family: none;"></span>
+                                                                    </button>
+                                                                </span>
+                                                                <input type="text" name="quant[2]" class="form-control input-number" value="1" min="1" max="10"
+                                                                       style="text-align: center;">
+                                                                <span class="input-group-btn">
+                                                                    <button type="button" class="btn btn-number" data-type="plus" data-field="quant[2]">
+                                                                        <span class="glyphicon glyphicon-plus" style="font-family: none;"></span>
+                                                                    </button>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                        <div class="add-to-cart-buttons" style="margin-top: 1rem;">
+                                                            <a href="@Url.Action("ThemVaoGio", "Cart", new { MaSP = it.MaSP })" class="btn btn-info" role="button">Thêm vào giỏ hàng</a>
+                                                        </div>
+                                                        <!--<span class="or"></span>-->
+                                                    </div>
+                                                    @*<div class="add-to-box-sub">
+                                                        <ul class="add-to-links">
+                                                            <li><a href="#" class="link-wishlist">Yêu thích </a></li>
+                                                            <li><a href="#" class="link-compare">So sánh</a></li>
+                                                            <li><a class="email-friend" href="#">Mời bạn bè</a></li>
+                                                        </ul>
+                                                    </div>*@
+                                                </div>
+                                                <!--div class="product-options-bottom">
+                            <div class="add-to-box add-to-cart">
+                                            </div>
+                            </div-->
+                                            </div>
+                                            <!-- end div .box-info-detail -->
+                                        </div>
+                                    </div>
+                                </form>
+                                <div class="share-this" style="margin-top:18px;">
+                                    <span class='st_sharethis_large' displayText='ShareThis'></span>
+                                    <span class='st_facebook_large' displayText='Facebook'></span>
+                                    <span class='st_twitter_large' displayText='Tweet'></span>
+                                    <span class='st_linkedin_large' displayText='LinkedIn'></span>
+                                    <span class='st_pinterest_large' displayText='Pinterest'></span>
+                                    <span class='st_email_large' displayText='Email'></span>
+                                    <script type="text/javascript">var switchTo5x = true;</script>
+                                </div>
+                            </div>
+                            <div class="tab-detail">
+                                <ul class="nav nav-tabs">
+                                    <li class="active"><a data-toggle="tab" href="#home">Đặc điểm nổi bật</a></li>
+                                    <li><a data-toggle="tab" href="#menu1">Thông số kỹ thuật</a></li>
+                                </ul>
+
+                                <div class="tab-content">
+                                    <div id="home" class="tab-pane fade in active">
+                                        <p>Chỉ với một số tiền rất nhỏ, bạn sẽ được sở hữu chiếc smartphone @it.TenSP với đầy đủ tính năng đến từ thương hiệu Apple. @it.TenSP đưa smartphone tiếp cận dễ dàng hơn tới người dùng.</p>
+                                        
+                                        <ul class="dec">
+                                            <li>Thiết kế gọn gàng trong lòng bàn tay</li>
+                                            <li>Kết nối và chia sẻ không ngừng</li>
+                                            <li>Chụp ảnh chuyên nghiệp với camera HDR</li>
+                                            <li>Gọi video không giới hạn bằng camera trước</li>
+                                            <li>Hai sim và thẻ nhớ linh hoạt</li>
+                                        </ul>
+                                    </div>
+                                    <div id="menu1" class="tab-pane fade">
+                                        <h3>@it.TenSP</h3>
+                                        <p>Màn hình :	@it.KichThuoc pixels </p>
+                                        <p>Camera trước : @it.Camera MP</p>
+                                        <p>Camera sau : 8 MP </p>
+                                        <p>RAM :	8 GB</p>
+                                        <p>Bộ nhớ  :	@it.BoNho GB</p>
+                                        <p>Dung lượng pin :	@it.Pin mAh</p>
+                                        <p>Hệ điều hành :	@it.HDH</p>
+                                        <p>Xuất xứ :	Hàn Quốc</p>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                        <div id="upsell_pro" class="products-grid">
+                            <div class="inner">
+                                <div class="title">
+                                    <span>Sản phẩm liên quan</span>
+                                </div>
+                                <div class="block  vt-slider vt-slider5  row">
+                                    <div class="slider-inner">
+                                        <div class="container-slider">
+                                            <div class="products-grid">
+                                                @foreach (var it in SPLQ)
+                                                {
+                                                    <div class="item">
+                                                        <div class="item-wrap">
+                                                            <div class="item-image">
+                                                                <a class="product-image no-touch" href="#" title="@it.TenSP">
+                                                                    <img class="first_image" src="~/Content/images/product/Phone/@it.url" alt="Product demo" / style="height:250px;">
+                                                                </a>
+                                                                <div class="item-btn">
+                                                                    <div class="box-inner">
+                                                                        <a title="Add to wishlist" href="#" class="link-wishlist">&nbsp;</a>
+                                                                        <a title="Add to compare" href="#" class="link-compare">&nbsp;</a>
+                                                                        <span class="qview">
+                                                                            <a class="vt_quickview_handler" data-original-title="Quick View" data-placement="left" data-toggle="tooltip" href="#"><span>Quick View</span></a>
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                                <a title="Add to cart" class="btn-cart" href="@Url.Action("ThemVaoGio", "Cart", new { MaSP = it.MaSP })">&nbsp;</a>
+                                                            </div>
+                                                            <div class="pro-info">
+                                                                <div class="pro-inner">
+                                                                    <div class="pro-title product-name">
+                                                                        
+                                                                            @Html.ActionLink((string)it.TenSP, "Detail", new { id= it.MaSP})
+                                                                        
+                                                                    </div>
+                                                                    <div class="pro-content">
+                                                                        <div class="wrap-price">
+                                                                            <div class="price-box">
+                                                                                <span class="regular-price">
+                                                                                    <span class="price" style="font-size:14px"> @it.GiaSP.ToString("N0") VND</span>
+                                                                                </span>
+                                                                            </div>
+                                                                        </div>
+                                                                       
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!--end item wrap -->
+                                                    </div>
+                                                }
+
+
+                                            </div>
+                                        </div>
+                                        <div class="navslider">
+                                            <a class="prev" href="#">Trước</a>
+                                            <a class="next" href="#">Sau</a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end content-->

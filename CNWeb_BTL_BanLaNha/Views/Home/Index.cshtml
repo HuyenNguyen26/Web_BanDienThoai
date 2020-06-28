@@ -1,0 +1,173 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+    var spmoi = ViewBag.sqpmoi;
+    var spkm = ViewBag.spkm;
+}
+@using CNWeb_BTL_BanLaNha.Models;
+<!--begin content-->
+<div id="box-content">
+    <div class="container" style="margin-top: 1rem">
+        <div class="row">
+            <div class="slide-show">
+                <div class="vt-slideshow">
+                    <ul>
+                        <li class="slide1" data-transition="random"><img src="~/Content/images/slide/bg-s2.png" alt="" /></li>
+                        <li class="slide2" data-transition="random"><img src="~/Content/images/slide/bg-s1.png" alt="" /></li>
+                        <li class="slide3" data-transition="random"><img src="~/Content/images/slide/bg-s3.png" alt="" /></li>
+                        <li class="slide3" data-transition="random"><img src="~/Content/images/slide/bg-s4.png" alt="" /></li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="position-02">
+        <div class="container">
+            <div class="row">
+                <div class="title-sp">
+                    Sản Phẩm Mới
+                    <div class="std">
+                        Các sản phẩm mới nhất tại BanLaNha.
+                    </div>
+                </div>
+                <div class="block vt-slider vt-slider3">
+                    <div class="slider-inner">
+                        <div class="container-slider">
+                            <div class="products-grid">
+                                @foreach (var it  in spmoi)
+                                {
+                                <div class="item">
+                                    <div class="item-wrap">
+                                        <div class="item-image">
+                                            <a class="product-image no-touchs">
+                                                <img class="first_image" src="~/Content/images/product/Phone/@it.url" alt="Product demo" style="height:215px" />
+                                            </a>
+                                            <div class="item-btn">
+                                                <div class="box-inner">
+                                                    <a title="Add to wishlist" href="#" class="link-wishlist">&nbsp;</a>
+                                                    <a title="Add to compare" href="#" class="link-compare">&nbsp;</a>
+                                                    <span class="qview">
+                                                        <a class="vt_quickview_handler" data-original-title="Quick View" data-placement="left"
+                                                           data-toggle="tooltip" href="#"><span>Quick View</span></a>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <a class="btn-cart" href="@Url.Action("ThemVaoGio", "Cart", new { MaSP = it.MaSP })"> &nbsp; </a>
+                                            @*<a title="Add to cart" class="btn-cart" href="#">&nbsp;</a>*@
+                                        </div>
+                                        <div class="pro-info">
+                                            <div class="pro-inner">
+                                                <div class="pro-title product-name">
+                                                    <a href="#">
+                                                       
+                                                        @Html.ActionLink((string)it.TenSP, "Detail", "Product")
+                                                    </a>
+                                                </div>
+                                                <div class="pro-content">
+                                                    <div class="wrap-price">
+                                                        <div class="price-box">
+                                                            <span class="regular-price">
+                                                                @{
+                                                                    var giaKM = it.GiaSP * (1 - float.Parse(it.PhanTramKM));
+                                                                }
+                                                                <span class="price" style="font-size:14px">@giaKM.ToString("N0") VND</span>
+                                                            </span>
+                                                            <p class="special-price">
+                                                                <span class="price">@it.GiaSP.ToString("N0")</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                }
+                                
+                            </div>
+                        </div>
+                        <div class="navslider">
+                            <a class="prev" href="#">Prev</a>
+                            <a class="next" href="#">Next</a>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="position-02">
+        <div class="container">
+            <div class="row">
+                <div class="title-sp">
+                    Sản Phẩm Khuyến Mãi
+                    <div class="std">
+                        Các sản đang khuyến mãi tại BanLaNha.
+                    </div>
+                </div>
+                <div class="block vt-slider vt-slider3">
+                    <div class="slider-inner">
+                        <div class="container-slider">
+                            <div class="products-grid">
+                                @foreach (var it in spkm)
+                                {
+                                    <div class="item">
+                                        <div class="item-wrap">
+                                            <div class="item-image">
+                                                <a class="product-image no-touchs">
+                                                    <img class="first_image" src="~/Content/images/product/Phone/@it.url" alt="Product demo" style="height:215px" />
+                                                </a>
+                                                <div class="item-btn">
+                                                    <div class="box-inner">
+                                                        <a title="Add to wishlist" href="#" class="link-wishlist">&nbsp;</a>
+                                                        <a title="Add to compare" href="#" class="link-compare">&nbsp;</a>
+                                                        <span class="qview">
+                                                            <a class="vt_quickview_handler" data-original-title="Quick View" data-placement="left"
+                                                               data-toggle="tooltip" href="#"><span>Quick View</span></a>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <a class="btn-cart" href="@Url.Action("ThemVaoGio", "Cart", new { MaSP = it.MaSP })"> &nbsp; </a>
+                                            </div>
+                                            <div class="pro-info">
+                                                <div class="pro-inner">
+                                                    <div class="pro-title product-name">
+                                                        <a href="#">
+                                                            @Html.ActionLink((string)it.TenSP, "Detail", "Product")
+                                                        </a>
+                                                    </div>
+                                                    <div class="pro-content">
+                                                        <div class="wrap-price">
+                                                            <div class="price-box">
+                                                                <span class="regular-price">
+                                                                    @{
+                                                                        var giaKM = it.GiaSP * (1 - float.Parse(it.PhanTramKM));
+                                                                    }
+                                                                    <span class="price" style="font-size:14px">@giaKM.ToString("N0") VND</span>
+                                                                </span>
+                                                                <p class="special-price">
+                                                                    <span class="price">@it.GiaSP.ToString("N0")</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                }
+
+                            </div>
+                        </div>
+                        <div class="navslider">
+                            <a class="prev" href="#">Prev</a>
+                            <a class="next" href="#">Next</a>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end content-->

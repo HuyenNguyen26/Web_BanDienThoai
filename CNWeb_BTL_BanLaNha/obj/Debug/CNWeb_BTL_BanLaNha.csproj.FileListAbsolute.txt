@@ -1,0 +1,235 @@
+D:\WEB\CNWeb_BTL\CNWeb_BTL_BanLaNha\bin\CNWeb_BTL_BanLaNha.dll.config
+D:\WEB\CNWeb_BTL\CNWeb_BTL_BanLaNha\bin\CNWeb_BTL_BanLaNha.dll
+D:\WEB\CNWeb_BTL\CNWeb_BTL_BanLaNha\bin\CNWeb_BTL_BanLaNha.pdb
+D:\WEB\CNWeb_BTL\CNWeb_BTL_BanLaNha\bin\roslyn\csc.exe
+D:\WEB\CNWeb_BTL\CNWeb_BTL_BanLaNha\bin\roslyn\csc.exe.config
+D:\WEB\CNWeb_BTL\CNWeb_BTL_BanLaNha\bin\roslyn\csc.rsp
+D:\WEB\CNWeb_BTL\CNWeb_BTL_BanLaNha\bin\roslyn\csi.exe
+D:\WEB\CNWeb_BTL\CNWeb_BTL_BanLaNha\bin\roslyn\csi.exe.config
+D:\WEB\CNWeb_BTL\CNWeb_BTL_BanLaNha\bin\roslyn\csi.rsp
+D:\WEB\CNWeb_BTL\CNWeb_BTL_BanLaNha\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\WEB\CNWeb_BTL\CNWeb_BTL_BanLaNha\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\WEB\CNWeb_BTL\CNWeb_BTL_BanLaNha\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\WEB\CNWeb_BTL\CNWeb_BTL_BanLaNha\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\WEB\CNWeb_BTL\CNWeb_BTL_BanLaNha\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\WEB\CNWeb_BTL\CNWeb_BTL_BanLaNha\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\WEB\CNWeb_BTL\CNWeb_BTL_BanLaNha\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\WEB\CNWeb_BTL\CNWeb_BTL_BanLaNha\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\WEB\CNWeb_BTL\CNWeb_BTL_BanLaNha\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\WEB\CNWeb_BTL\CNWeb_BTL_BanLaNha\bin\roslyn\Microsoft.Managed.Core.targets
+D:\WEB\CNWeb_BTL\CNWeb_BTL_BanLaNha\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\WEB\CNWeb_BTL\CNWeb_BTL_BanLaNha\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\WEB\CNWeb_BTL\CNWeb_BTL_BanLaNha\bin\roslyn\System.AppContext.dll
+D:\WEB\CNWeb_BTL\CNWeb_BTL_BanLaNha\bin\roslyn\System.Collections.Immutable.dll
+D:\WEB\CNWeb_BTL\CNWeb_BTL_BanLaNha\bin\roslyn\System.Console.dll
+D:\WEB\CNWeb_BTL\CNWeb_BTL_BanLaNha\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\WEB\CNWeb_BTL\CNWeb_BTL_BanLaNha\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\WEB\CNWeb_BTL\CNWeb_BTL_BanLaNha\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\WEB\CNWeb_BTL\CNWeb_BTL_BanLaNha\bin\roslyn\System.Globalization.Calendars.dll
+D:\WEB\CNWeb_BTL\CNWeb_BTL_BanLaNha\bin\roslyn\System.IO.Compression.dll
+D:\WEB\CNWeb_BTL\CNWeb_BTL_BanLaNha\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\WEB\CNWeb_BTL\CNWeb_BTL_BanLaNha\bin\roslyn\System.IO.FileSystem.dll
+D:\WEB\CNWeb_BTL\CNWeb_BTL_BanLaNha\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\WEB\CNWeb_BTL\CNWeb_BTL_BanLaNha\bin\roslyn\System.Net.Http.dll
+D:\WEB\CNWeb_BTL\CNWeb_BTL_BanLaNha\bin\roslyn\System.Net.Sockets.dll
+D:\WEB\CNWeb_BTL\CNWeb_BTL_BanLaNha\bin\roslyn\System.Reflection.Metadata.dll
+D:\WEB\CNWeb_BTL\CNWeb_BTL_BanLaNha\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\WEB\CNWeb_BTL\CNWeb_BTL_BanLaNha\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\WEB\CNWeb_BTL\CNWeb_BTL_BanLaNha\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\WEB\CNWeb_BTL\CNWeb_BTL_BanLaNha\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\WEB\CNWeb_BTL\CNWeb_BTL_BanLaNha\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\WEB\CNWeb_BTL\CNWeb_BTL_BanLaNha\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\WEB\CNWeb_BTL\CNWeb_BTL_BanLaNha\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\WEB\CNWeb_BTL\CNWeb_BTL_BanLaNha\bin\roslyn\System.ValueTuple.dll
+D:\WEB\CNWeb_BTL\CNWeb_BTL_BanLaNha\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\WEB\CNWeb_BTL\CNWeb_BTL_BanLaNha\bin\roslyn\System.Xml.XmlDocument.dll
+D:\WEB\CNWeb_BTL\CNWeb_BTL_BanLaNha\bin\roslyn\System.Xml.XPath.dll
+D:\WEB\CNWeb_BTL\CNWeb_BTL_BanLaNha\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\WEB\CNWeb_BTL\CNWeb_BTL_BanLaNha\bin\roslyn\vbc.exe
+D:\WEB\CNWeb_BTL\CNWeb_BTL_BanLaNha\bin\roslyn\vbc.exe.config
+D:\WEB\CNWeb_BTL\CNWeb_BTL_BanLaNha\bin\roslyn\vbc.rsp
+D:\WEB\CNWeb_BTL\CNWeb_BTL_BanLaNha\bin\roslyn\VBCSCompiler.exe
+D:\WEB\CNWeb_BTL\CNWeb_BTL_BanLaNha\bin\roslyn\VBCSCompiler.exe.config
+D:\WEB\CNWeb_BTL\CNWeb_BTL_BanLaNha\bin\Antlr3.Runtime.dll
+D:\WEB\CNWeb_BTL\CNWeb_BTL_BanLaNha\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\WEB\CNWeb_BTL\CNWeb_BTL_BanLaNha\bin\Microsoft.Web.Infrastructure.dll
+D:\WEB\CNWeb_BTL\CNWeb_BTL_BanLaNha\bin\Newtonsoft.Json.dll
+D:\WEB\CNWeb_BTL\CNWeb_BTL_BanLaNha\bin\System.Web.Helpers.dll
+D:\WEB\CNWeb_BTL\CNWeb_BTL_BanLaNha\bin\System.Web.Mvc.dll
+D:\WEB\CNWeb_BTL\CNWeb_BTL_BanLaNha\bin\System.Web.Optimization.dll
+D:\WEB\CNWeb_BTL\CNWeb_BTL_BanLaNha\bin\System.Web.Razor.dll
+D:\WEB\CNWeb_BTL\CNWeb_BTL_BanLaNha\bin\System.Web.WebPages.Deployment.dll
+D:\WEB\CNWeb_BTL\CNWeb_BTL_BanLaNha\bin\System.Web.WebPages.dll
+D:\WEB\CNWeb_BTL\CNWeb_BTL_BanLaNha\bin\System.Web.WebPages.Razor.dll
+D:\WEB\CNWeb_BTL\CNWeb_BTL_BanLaNha\bin\WebGrease.dll
+D:\WEB\CNWeb_BTL\CNWeb_BTL_BanLaNha\bin\System.Web.Helpers.xml
+D:\WEB\CNWeb_BTL\CNWeb_BTL_BanLaNha\bin\System.Web.Mvc.xml
+D:\WEB\CNWeb_BTL\CNWeb_BTL_BanLaNha\bin\System.Web.Optimization.xml
+D:\WEB\CNWeb_BTL\CNWeb_BTL_BanLaNha\bin\System.Web.Razor.xml
+D:\WEB\CNWeb_BTL\CNWeb_BTL_BanLaNha\bin\System.Web.WebPages.xml
+D:\WEB\CNWeb_BTL\CNWeb_BTL_BanLaNha\bin\System.Web.WebPages.Deployment.xml
+D:\WEB\CNWeb_BTL\CNWeb_BTL_BanLaNha\bin\System.Web.WebPages.Razor.xml
+D:\WEB\CNWeb_BTL\CNWeb_BTL_BanLaNha\bin\Newtonsoft.Json.xml
+D:\WEB\CNWeb_BTL\CNWeb_BTL_BanLaNha\bin\Antlr3.Runtime.pdb
+D:\WEB\CNWeb_BTL\CNWeb_BTL_BanLaNha\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\WEB\CNWeb_BTL\CNWeb_BTL_BanLaNha\obj\Debug\CNWeb_BTL_BanLaNha.csprojAssemblyReference.cache
+D:\WEB\CNWeb_BTL\CNWeb_BTL_BanLaNha\obj\Debug\CNWeb_BTL_BanLaNha.csproj.CoreCompileInputs.cache
+D:\WEB\CNWeb_BTL\CNWeb_BTL_BanLaNha\obj\Debug\CNWeb_BTL_BanLaNha.csproj.CopyComplete
+D:\WEB\CNWeb_BTL\CNWeb_BTL_BanLaNha\obj\Debug\CNWeb_BTL_BanLaNha.dll
+D:\WEB\CNWeb_BTL\CNWeb_BTL_BanLaNha\obj\Debug\CNWeb_BTL_BanLaNha.pdb
+D:\WEB\CNWeb_BTL\CNWeb_BTL_BanLaNha\bin\EntityFramework.dll
+D:\WEB\CNWeb_BTL\CNWeb_BTL_BanLaNha\bin\EntityFramework.SqlServer.dll
+D:\WEB\CNWeb_BTL\CNWeb_BTL_BanLaNha\bin\EntityFramework.xml
+D:\WEB\CNWeb_BTL\CNWeb_BTL_BanLaNha\bin\EntityFramework.SqlServer.xml
+C:\Users\ASUS\Desktop\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\CNWeb_BTL_BanLaNha.dll.config
+C:\Users\ASUS\Desktop\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\CNWeb_BTL_BanLaNha.dll
+C:\Users\ASUS\Desktop\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\CNWeb_BTL_BanLaNha.pdb
+C:\Users\ASUS\Desktop\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\roslyn\csc.exe
+C:\Users\ASUS\Desktop\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\roslyn\csc.exe.config
+C:\Users\ASUS\Desktop\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\roslyn\csc.rsp
+C:\Users\ASUS\Desktop\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\roslyn\csi.exe
+C:\Users\ASUS\Desktop\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\roslyn\csi.exe.config
+C:\Users\ASUS\Desktop\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\roslyn\csi.rsp
+C:\Users\ASUS\Desktop\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\ASUS\Desktop\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\ASUS\Desktop\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\ASUS\Desktop\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\ASUS\Desktop\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\ASUS\Desktop\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\ASUS\Desktop\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\ASUS\Desktop\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\ASUS\Desktop\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\ASUS\Desktop\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\ASUS\Desktop\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\ASUS\Desktop\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\ASUS\Desktop\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\roslyn\System.AppContext.dll
+C:\Users\ASUS\Desktop\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\ASUS\Desktop\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\roslyn\System.Console.dll
+C:\Users\ASUS\Desktop\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\ASUS\Desktop\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\ASUS\Desktop\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\ASUS\Desktop\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\ASUS\Desktop\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\roslyn\System.IO.Compression.dll
+C:\Users\ASUS\Desktop\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\ASUS\Desktop\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\ASUS\Desktop\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\ASUS\Desktop\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\roslyn\System.Net.Http.dll
+C:\Users\ASUS\Desktop\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\roslyn\System.Net.Sockets.dll
+C:\Users\ASUS\Desktop\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\ASUS\Desktop\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\ASUS\Desktop\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\ASUS\Desktop\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\ASUS\Desktop\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\ASUS\Desktop\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\ASUS\Desktop\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\ASUS\Desktop\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\ASUS\Desktop\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\roslyn\System.ValueTuple.dll
+C:\Users\ASUS\Desktop\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\ASUS\Desktop\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\ASUS\Desktop\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\roslyn\System.Xml.XPath.dll
+C:\Users\ASUS\Desktop\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\ASUS\Desktop\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\roslyn\vbc.exe
+C:\Users\ASUS\Desktop\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\roslyn\vbc.exe.config
+C:\Users\ASUS\Desktop\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\roslyn\vbc.rsp
+C:\Users\ASUS\Desktop\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\roslyn\VBCSCompiler.exe
+C:\Users\ASUS\Desktop\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\ASUS\Desktop\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\Antlr3.Runtime.dll
+C:\Users\ASUS\Desktop\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\EntityFramework.dll
+C:\Users\ASUS\Desktop\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\EntityFramework.SqlServer.dll
+C:\Users\ASUS\Desktop\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\ASUS\Desktop\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\ASUS\Desktop\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\Newtonsoft.Json.dll
+C:\Users\ASUS\Desktop\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\System.Web.Helpers.dll
+C:\Users\ASUS\Desktop\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\System.Web.Mvc.dll
+C:\Users\ASUS\Desktop\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\System.Web.Optimization.dll
+C:\Users\ASUS\Desktop\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\System.Web.Razor.dll
+C:\Users\ASUS\Desktop\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\System.Web.WebPages.Deployment.dll
+C:\Users\ASUS\Desktop\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\System.Web.WebPages.dll
+C:\Users\ASUS\Desktop\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\System.Web.WebPages.Razor.dll
+C:\Users\ASUS\Desktop\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\WebGrease.dll
+C:\Users\ASUS\Desktop\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\EntityFramework.xml
+C:\Users\ASUS\Desktop\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\EntityFramework.SqlServer.xml
+C:\Users\ASUS\Desktop\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\System.Web.Helpers.xml
+C:\Users\ASUS\Desktop\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\System.Web.Mvc.xml
+C:\Users\ASUS\Desktop\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\System.Web.Optimization.xml
+C:\Users\ASUS\Desktop\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\System.Web.Razor.xml
+C:\Users\ASUS\Desktop\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\System.Web.WebPages.xml
+C:\Users\ASUS\Desktop\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\System.Web.WebPages.Deployment.xml
+C:\Users\ASUS\Desktop\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\System.Web.WebPages.Razor.xml
+C:\Users\ASUS\Desktop\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\Newtonsoft.Json.xml
+C:\Users\ASUS\Desktop\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\Antlr3.Runtime.pdb
+C:\Users\ASUS\Desktop\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\ASUS\Desktop\SalePhone_Website\CNWeb_BTL_BanLaNha\obj\Debug\CNWeb_BTL_BanLaNha.csprojAssemblyReference.cache
+C:\Users\ASUS\Desktop\SalePhone_Website\CNWeb_BTL_BanLaNha\obj\Debug\CNWeb_BTL_BanLaNha.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\Desktop\SalePhone_Website\CNWeb_BTL_BanLaNha\obj\Debug\CNWeb_BTL_BanLaNha.csproj.CopyComplete
+C:\Users\ASUS\Desktop\SalePhone_Website\CNWeb_BTL_BanLaNha\obj\Debug\CNWeb_BTL_BanLaNha.dll
+C:\Users\ASUS\Desktop\SalePhone_Website\CNWeb_BTL_BanLaNha\obj\Debug\CNWeb_BTL_BanLaNha.pdb
+C:\Users\thinh\Desktop\tài liệu môn học\nawm3_ky_II\Cong nghe Web\BTL\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\CNWeb_BTL_BanLaNha.dll.config
+C:\Users\thinh\Desktop\tài liệu môn học\nawm3_ky_II\Cong nghe Web\BTL\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\CNWeb_BTL_BanLaNha.dll
+C:\Users\thinh\Desktop\tài liệu môn học\nawm3_ky_II\Cong nghe Web\BTL\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\CNWeb_BTL_BanLaNha.pdb
+C:\Users\thinh\Desktop\tài liệu môn học\nawm3_ky_II\Cong nghe Web\BTL\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\roslyn\csc.exe
+C:\Users\thinh\Desktop\tài liệu môn học\nawm3_ky_II\Cong nghe Web\BTL\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\roslyn\csc.exe.config
+C:\Users\thinh\Desktop\tài liệu môn học\nawm3_ky_II\Cong nghe Web\BTL\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\roslyn\csc.rsp
+C:\Users\thinh\Desktop\tài liệu môn học\nawm3_ky_II\Cong nghe Web\BTL\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\roslyn\csi.exe
+C:\Users\thinh\Desktop\tài liệu môn học\nawm3_ky_II\Cong nghe Web\BTL\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\roslyn\csi.exe.config
+C:\Users\thinh\Desktop\tài liệu môn học\nawm3_ky_II\Cong nghe Web\BTL\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\roslyn\csi.rsp
+C:\Users\thinh\Desktop\tài liệu môn học\nawm3_ky_II\Cong nghe Web\BTL\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\thinh\Desktop\tài liệu môn học\nawm3_ky_II\Cong nghe Web\BTL\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\thinh\Desktop\tài liệu môn học\nawm3_ky_II\Cong nghe Web\BTL\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\thinh\Desktop\tài liệu môn học\nawm3_ky_II\Cong nghe Web\BTL\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\thinh\Desktop\tài liệu môn học\nawm3_ky_II\Cong nghe Web\BTL\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\thinh\Desktop\tài liệu môn học\nawm3_ky_II\Cong nghe Web\BTL\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\thinh\Desktop\tài liệu môn học\nawm3_ky_II\Cong nghe Web\BTL\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\thinh\Desktop\tài liệu môn học\nawm3_ky_II\Cong nghe Web\BTL\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\thinh\Desktop\tài liệu môn học\nawm3_ky_II\Cong nghe Web\BTL\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\thinh\Desktop\tài liệu môn học\nawm3_ky_II\Cong nghe Web\BTL\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\thinh\Desktop\tài liệu môn học\nawm3_ky_II\Cong nghe Web\BTL\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\thinh\Desktop\tài liệu môn học\nawm3_ky_II\Cong nghe Web\BTL\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\thinh\Desktop\tài liệu môn học\nawm3_ky_II\Cong nghe Web\BTL\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\roslyn\System.AppContext.dll
+C:\Users\thinh\Desktop\tài liệu môn học\nawm3_ky_II\Cong nghe Web\BTL\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\thinh\Desktop\tài liệu môn học\nawm3_ky_II\Cong nghe Web\BTL\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\roslyn\System.Console.dll
+C:\Users\thinh\Desktop\tài liệu môn học\nawm3_ky_II\Cong nghe Web\BTL\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\thinh\Desktop\tài liệu môn học\nawm3_ky_II\Cong nghe Web\BTL\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\thinh\Desktop\tài liệu môn học\nawm3_ky_II\Cong nghe Web\BTL\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\thinh\Desktop\tài liệu môn học\nawm3_ky_II\Cong nghe Web\BTL\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\thinh\Desktop\tài liệu môn học\nawm3_ky_II\Cong nghe Web\BTL\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\roslyn\System.IO.Compression.dll
+C:\Users\thinh\Desktop\tài liệu môn học\nawm3_ky_II\Cong nghe Web\BTL\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\thinh\Desktop\tài liệu môn học\nawm3_ky_II\Cong nghe Web\BTL\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\thinh\Desktop\tài liệu môn học\nawm3_ky_II\Cong nghe Web\BTL\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\thinh\Desktop\tài liệu môn học\nawm3_ky_II\Cong nghe Web\BTL\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\roslyn\System.Net.Sockets.dll
+C:\Users\thinh\Desktop\tài liệu môn học\nawm3_ky_II\Cong nghe Web\BTL\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\thinh\Desktop\tài liệu môn học\nawm3_ky_II\Cong nghe Web\BTL\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\thinh\Desktop\tài liệu môn học\nawm3_ky_II\Cong nghe Web\BTL\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\thinh\Desktop\tài liệu môn học\nawm3_ky_II\Cong nghe Web\BTL\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\thinh\Desktop\tài liệu môn học\nawm3_ky_II\Cong nghe Web\BTL\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\thinh\Desktop\tài liệu môn học\nawm3_ky_II\Cong nghe Web\BTL\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\thinh\Desktop\tài liệu môn học\nawm3_ky_II\Cong nghe Web\BTL\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\thinh\Desktop\tài liệu môn học\nawm3_ky_II\Cong nghe Web\BTL\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\thinh\Desktop\tài liệu môn học\nawm3_ky_II\Cong nghe Web\BTL\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\roslyn\System.ValueTuple.dll
+C:\Users\thinh\Desktop\tài liệu môn học\nawm3_ky_II\Cong nghe Web\BTL\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\thinh\Desktop\tài liệu môn học\nawm3_ky_II\Cong nghe Web\BTL\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\thinh\Desktop\tài liệu môn học\nawm3_ky_II\Cong nghe Web\BTL\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\roslyn\System.Xml.XPath.dll
+C:\Users\thinh\Desktop\tài liệu môn học\nawm3_ky_II\Cong nghe Web\BTL\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\thinh\Desktop\tài liệu môn học\nawm3_ky_II\Cong nghe Web\BTL\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\roslyn\vbc.exe
+C:\Users\thinh\Desktop\tài liệu môn học\nawm3_ky_II\Cong nghe Web\BTL\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\roslyn\vbc.exe.config
+C:\Users\thinh\Desktop\tài liệu môn học\nawm3_ky_II\Cong nghe Web\BTL\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\roslyn\vbc.rsp
+C:\Users\thinh\Desktop\tài liệu môn học\nawm3_ky_II\Cong nghe Web\BTL\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\roslyn\VBCSCompiler.exe
+C:\Users\thinh\Desktop\tài liệu môn học\nawm3_ky_II\Cong nghe Web\BTL\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\thinh\Desktop\tài liệu môn học\nawm3_ky_II\Cong nghe Web\BTL\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\EntityFramework.xml
+C:\Users\thinh\Desktop\tài liệu môn học\nawm3_ky_II\Cong nghe Web\BTL\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\EntityFramework.SqlServer.xml
+C:\Users\thinh\Desktop\tài liệu môn học\nawm3_ky_II\Cong nghe Web\BTL\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\System.Web.Helpers.xml
+C:\Users\thinh\Desktop\tài liệu môn học\nawm3_ky_II\Cong nghe Web\BTL\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\System.Web.Mvc.xml
+C:\Users\thinh\Desktop\tài liệu môn học\nawm3_ky_II\Cong nghe Web\BTL\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\System.Web.Optimization.xml
+C:\Users\thinh\Desktop\tài liệu môn học\nawm3_ky_II\Cong nghe Web\BTL\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\System.Web.Razor.xml
+C:\Users\thinh\Desktop\tài liệu môn học\nawm3_ky_II\Cong nghe Web\BTL\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\System.Web.WebPages.xml
+C:\Users\thinh\Desktop\tài liệu môn học\nawm3_ky_II\Cong nghe Web\BTL\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\System.Web.WebPages.Deployment.xml
+C:\Users\thinh\Desktop\tài liệu môn học\nawm3_ky_II\Cong nghe Web\BTL\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\System.Web.WebPages.Razor.xml
+C:\Users\thinh\Desktop\tài liệu môn học\nawm3_ky_II\Cong nghe Web\BTL\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\Newtonsoft.Json.xml
+C:\Users\thinh\Desktop\tài liệu môn học\nawm3_ky_II\Cong nghe Web\BTL\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\Antlr3.Runtime.pdb
+C:\Users\thinh\Desktop\tài liệu môn học\nawm3_ky_II\Cong nghe Web\BTL\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\thinh\Desktop\tài liệu môn học\nawm3_ky_II\Cong nghe Web\BTL\SalePhone_Website\CNWeb_BTL_BanLaNha\obj\Debug\CNWeb_BTL_BanLaNha.csprojAssemblyReference.cache
+C:\Users\thinh\Desktop\tài liệu môn học\nawm3_ky_II\Cong nghe Web\BTL\SalePhone_Website\CNWeb_BTL_BanLaNha\obj\Debug\CNWeb_BTL_BanLaNha.csproj.CoreCompileInputs.cache
+C:\Users\thinh\Desktop\tài liệu môn học\nawm3_ky_II\Cong nghe Web\BTL\SalePhone_Website\CNWeb_BTL_BanLaNha\obj\Debug\CNWeb_BTL_BanLaNha.csproj.CopyComplete
+C:\Users\thinh\Desktop\tài liệu môn học\nawm3_ky_II\Cong nghe Web\BTL\SalePhone_Website\CNWeb_BTL_BanLaNha\obj\Debug\CNWeb_BTL_BanLaNha.dll
+C:\Users\thinh\Desktop\tài liệu môn học\nawm3_ky_II\Cong nghe Web\BTL\SalePhone_Website\CNWeb_BTL_BanLaNha\obj\Debug\CNWeb_BTL_BanLaNha.pdb
+C:\Users\thinh\Desktop\tài liệu môn học\nawm3_ky_II\Cong nghe Web\BTL\SalePhone_Website\CNWeb_BTL_BanLaNha\bin\System.Net.Http.dll
