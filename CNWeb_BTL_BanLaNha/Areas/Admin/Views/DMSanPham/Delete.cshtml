@@ -1,0 +1,42 @@
+﻿@model CNWeb_BTL_BanLaNha.Models.LOAISANPHAM
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2 style="margin:30px;">Xóa loại sản phẩm</h2>
+<h3 style="margin:30px">Bạn có muốn xóa loại sản phẩm này không?</h3>
+<div>
+    <h4 style="margin:30px;">Loại sản phẩm</h4>
+    <hr style="margin:30px;"/>
+    <dl class="dl-horizontal" style="margin:30px;">
+        <dt>
+            @Html.DisplayNameFor(model => model.MaLoai)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MaLoai)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TenLoai)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TenLoai)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color" style="margin:30px;">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Quay lại", "Index")
+        </div>
+    }
+</div>
+
+

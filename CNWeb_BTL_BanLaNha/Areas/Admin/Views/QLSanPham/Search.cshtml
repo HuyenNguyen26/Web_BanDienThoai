@@ -1,0 +1,133 @@
+﻿@model PagedList.IPagedList<CNWeb_BTL_BanLaNha.Models.CTSANPHAM>
+@using PagedList.Mvc;
+@{
+    ViewBag.Title = "Search";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+@{
+    string tentra = ViewBag.tensp;
+    string loaitra = ViewBag.tenloai;
+    string tugia = ViewBag.TuGia;
+    string dengia = ViewBag.DenGia;
+}
+
+<h2>Tìm kiếm</h2>
+<p>
+    <button onclick="location.href='@Url.Action("Create", "QLSanPham")';return false;">Create New</button>
+</p>
+
+@using (Html.BeginForm("Search", "QLSanPham"))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            @Html.Label("Tên Sản Phẩm", htmlAttributes: new { @class = "control-label col-md-2", @style = "color:black;" })
+            <div class="col-md-10" style="top:15px;">
+                @Html.TextBox("txtTenSP", tentra, htmlAttributes: new { @class = "form-control", @placeholder = "Nhập tên sản phẩm . . . . . ", @style = "display:block;width:100%; height:34px;padding:6px 12px;color: #555;background-image: none;border: 1px solid #ccc;border-radius: 4px" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.Label("Mã Loại", htmlAttributes: new { @class = "control-label col-md-2", @style = "color:black;" })
+            <div class="col-md-10">
+                @Html.DropDownList("maloai", new SelectList(ViewBag.maloai, "tenloai", "tenloai"), "", htmlAttributes: new { @class = "form-control", @style = "display:block;width:100%; height:34px;padding:6px 12px;color: #555;background-image: none;border: 1px solid #ccc;border-radius: 4px" })
+
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.Label("Giá từ", htmlAttributes: new { @class = "control-label col-md-2", @style = "color:black;" })
+            <div class="col-md-10" style="top:15px;">
+                @Html.TextBox("txtTuGia",tugia, htmlAttributes: new { @class = "form-control", @placeholder = "Nhập tìm từ giá . . . . . ", @type = "number", @style = "display:block;width:100%; height:34px;padding:6px 12px;color: #555;background-image: none;border: 1px solid #ccc;border-radius: 4px" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.Label("Đến giá", htmlAttributes: new { @class = "control-label col-md-2", @style = "top:5px; color:black;" })
+            <div class="col-md-10" style="top:30px;">
+                @Html.TextBox("txtDenGia",dengia, htmlAttributes: new { @class = "form-control", @placeholder = "Đến giá . . . . . ", @type = "number", @style = "display:block;width:100%; height:34px;padding:6px 12px;color: #555;background-image: none;border: 1px solid #ccc;border-radius: 4px" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10" style="top:15px;">
+                <input type="submit" value="Search" class="btn btn-default" />
+            </div>
+        </div>
+
+    </div>
+}
+
+
+<table class="table table-bordered">
+    <tr>
+        <th>
+            @Html.Label("Mã Sản Phẩm")
+        </th>
+        <th>
+            @Html.Label("Mã Loại")
+        </th>
+        <th>
+            @Html.Label("Tên Sản Phẩm")
+        </th>
+        <th>
+            @Html.Label("Màu Sắc")
+        </th>
+        <th>
+            @Html.Label("Bộ Nhớ")
+        </th>
+        <th>
+            @Html.Label("Đơn Giá")
+        </th>
+        <th>
+            @Html.Label("Ảnh")
+        </th>
+        <th>
+            @Html.Label("Mô tả")
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.MaSP)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MaLoai)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TenSP)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MauSac)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BoNho)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GiaSP)
+            </td>
+            <td>
+                <img class="first_image" src="~/Content/images/product/Phone/@item.url" alt="Product demo" style="height:75px; width:60px;" />
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MoTa)
+            </td>
+            <td>
+                <button onclick="location.href='@Url.Action("Edit", "QLSanPham", new { MaSP = item.MaSP })';return false;">Edit</button>
+                <button onclick="location.href='@Url.Action("Details", "QLSanPham" , new { MaSP=item.MaSP })';return false;">Details</button>
+                <button onclick="location.href='@Url.Action("Delete", "QLSanPham", new { MaSP = item.MaSP })';return false;">Delete</button>
+            </td>
+        </tr>
+    }
+
+</table>
+<div class="col-md-12 text-center clear-both">
+    @Html.PagedListPager(Model, page => Url.Action("Index", new { page }))
+</div>
+
