@@ -2,6 +2,7 @@
 @{
     ViewBag.Title = "ProductsList";
     
+    
 }
 
 
@@ -128,7 +129,7 @@
                             </ul>
 
                             <div class="col-md-12 text-center clear-both">
-                                @Html.PagedListPager(Model, sotrang => Url.Action("ProductsList", new { page = sotrang }))
+                                @Html.PagedListPager(Model, sotrang => Url.Action("ProductsList", new { page = sotrang, search = ViewBag.searchString }))
                             </div>
                         </div>
                     </div>

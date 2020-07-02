@@ -24,18 +24,19 @@ namespace CNWeb_BTL_BanLaNha.Controllers
             return View(model);
         }
 
-        public ActionResult ProductsList(int ?page)
+        public ActionResult ProductsList(string search,int ?page)
         {
-            var model = context.spMois.Where(x => x.TenSP != null).OrderByDescending(x => x.GiaSP).ToPagedList(page?? 1, 12);
-            //var model = context.SANPHAMs.Where(x => x.TenSP != null).ToList();
+            var model = context.spMois.Where(x => x.TenSP != null).OrderByDescending(x => x.GiaSP).ToPagedList(page ?? 1, 12);
+            ViewBag.searchString = search;
             return View(model);
         }
 
         [HttpPost]
         public ActionResult Timkiem(string search, int ?page)
         {
-            var model = context.spMois.Where(x => x.TenSP.Contains(search)).OrderByDescending(x => x.TenSP).ToPagedList(page ?? 1, 12); ;
-            return View("ProductsList", model);
+            var model = context.spMois.Where(x => x.TenSP.Contains(search)).OrderByDescending(x => x.TenSP).ToPagedList(page ?? 1, 12);
+            ViewBag.searchString = search;
+            return View("ProductsList",model);
         }
 
         public ActionResult DT(int? page)
@@ -70,7 +71,7 @@ namespace CNWeb_BTL_BanLaNha.Controllers
 
         public ActionResult SPXM(int? page)
         {
-            var model = context.spMois.Where(x => x.TenSP.Contains("XiaoMi") && x.MaLoai == 1).OrderByDescending(x => x.TenSP).ToPagedList(page ?? 1, 12);
+            var model = context.spMois.Where(x => x.TenSP.Contains("Xiaomi") && x.MaLoai == 1).OrderByDescending(x => x.TenSP).ToPagedList(page ?? 1, 12);
             return View("ProductsList", model);
         }
 

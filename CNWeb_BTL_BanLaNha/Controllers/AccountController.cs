@@ -28,21 +28,22 @@ namespace CNWeb_BTL_BanLaNha.Controllers
                                                        a.MatKhau.Equals(acc.MatKhau)).FirstOrDefault();
             if (result != null)
             {
-
-                if( result.is_ADMIN == "1")
+                if (result.is_ADMIN == "1")
                 {
-                    return RedirectToAction("Index", "HomeAdmin");
+                    return RedirectToAction("HomeAdmin", "Admin");
                 }
                 else
                 {
                     return RedirectToAction("Index", "Home");
                 }
-                Session["Login"] = acc;
-                
+
+                //Section["Login"] = acc;
+
             }
 
-            return RedirectToAction("ProductList","Product");
+            return RedirectToAction("Index", "Home");
         }
 
     }
+
 }
